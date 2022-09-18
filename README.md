@@ -1,2 +1,0 @@
-# college
-sem 3
