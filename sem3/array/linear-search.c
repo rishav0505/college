@@ -39,4 +39,4 @@ int main()
             printf("%d found in the array but it isn't the smallest element\n", key);
     else
         printf("%d not found in the array!\n", key);
-}
+} 
