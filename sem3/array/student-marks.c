@@ -34,4 +34,4 @@ void main()
                 printf(" %d,", j + 1);
         printf("\n");
     }
-}
+} 
