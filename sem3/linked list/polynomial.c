@@ -1,67 +1,7 @@
 //#include "singly-linked.h"
-typedef struct node
-{
-    int data;
-    struct node *next;
-} node;
-
-typedef struct list
-{
-    struct node *head;
-    struct node *tail;
-
-    int length;
-} list;
-
-node *createNewNode(int data);
-list *createEmptyList();
-node *createEmptyNode();
-int append(list *l, node *element);
 
 #include <stdio.h>
 #include <stdlib.h>
-
-int append(list *l, node *element)
-{
-    if (!l)
-    {
-        fprintf(stderr, "the passed list is NULL!\n");
-        return 1;
-    }
-
-    node **nodeptr = &l->head;
-    while (*nodeptr)
-        nodeptr = &(*nodeptr)->next;
-
-    *nodeptr = element;
-    l->length++;
-
-    return 0;
-}
-node *createEmptyNode()
-{
-    node *newNode = (node *)malloc(sizeof(node));
-    newNode->data = 0;
-    newNode->next = NULL;
-
-    return newNode;
-}
-list *createEmptyList()
-{
-    list *newList = (list *)malloc(sizeof(list));
-    newList->head = NULL;
-    newList->tail = NULL;
-    newList->length = 0;
-
-    return newList;
-}
-node *createNewNode(int data)
-{
-    node *newNode = createEmptyNode();
-    newNode->data = data;
-
-    return newNode;
-}
 
 // adds data in corresponding nodes of the two linked lists to give the sum of the polynomial
 list *add(list *l1, list *l2)
