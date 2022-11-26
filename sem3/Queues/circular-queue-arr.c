@@ -91,6 +91,8 @@ void main()
     }
 }
 /*
+Output:
+
 1.Insert
 2.Delete
 3.Peek
