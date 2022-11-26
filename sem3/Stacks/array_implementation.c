@@ -62,3 +62,33 @@ int main()
         }
     } while (choice != 4);
 }
+/*
+Output:
+
+Enter the size of STACK: 3
+MENU
+ 1.PUSH
+ 2.POP
+ 3.DISPLAY
+ 4.EXIT
+Enter the Choice: 1
+Enter a value: 1
+Enter the Choice: 1
+Enter a value: 2
+Enter the Choice: 1
+Enter a value: 3
+Enter the Choice: 1
+STACK is over flow
+Enter the Choice: 3
+The elements in STACK:
+3 <- TOP
+2
+1
+Enter the Choice: 2
+Enter the Choice: 2
+Enter the Choice: 2
+Enter the Choice: 2
+Stack is under flow!
+Enter the Choice: 4
+Exiting the program.
+*/
