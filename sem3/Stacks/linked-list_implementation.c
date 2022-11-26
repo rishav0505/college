@@ -73,3 +73,26 @@ int main()
         }
     } while (choice != 4);
 }
+
+/*
+Output:
+
+MENU
+ 1.PUSH
+ 2.POP
+ 3.DISPLAY
+ 4.EXIT
+Enter the Choice: 1
+Enter a value: 1
+Enter the Choice: 1
+Enter a value: 2
+Enter the Choice: 1
+Enter a value: 3
+Enter the Choice: 2
+Enter the Choice: 2
+Enter the Choice: 2
+Enter the Choice: 2
+Stack is under flow!
+Enter the Choice: 4
+Exiting the program.
+*/
