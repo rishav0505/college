@@ -1,0 +1,77 @@
+Important C programs for Lab, 2022, TIU
+
+Arrays
+
+1) WAP to search an element in an array using Linear search and tell whether it is 
+smallest element or not.
+2) WAP to read a 2D array marks which stores the marks of 5 students in three 
+subjects. Also, write program to display the highest marks in each subject.
+3) WAP to transpose a 3X3 matrix.
+4) WAP to fill a square matrix with value 0(zero) on the diagonals, value 1 on the upper 
+right triangle and value -1 on the lower left triangle.
+
+Linked List
+
+5) WAP to create a single linked list and perform insertions and deletions of all cases.
+(Options: 1: create a list, 2: display the list, 3: add a node at the beginning, 4: add a 
+node at the end, 5: add a node before a given node, 6: add a node after a given 
+node, 7: delete a node from the beginning, 8: delete a node from the end, 10: exit). 
+You can take user input based on the given choices.
+6) WAP to create a Circular linked list and perform the following: 1: create a list, 2: 
+display the list, 3: add a node at the beginning, 4: add a node at the end, 5: delete a 
+node from the beginning, 6: delete a node from the end, 7: Exit. You can take user 
+input based on the given choices.
+7) WAP to create a Double linked list and perform the following: 1: create a list, 2: 
+display the list, 3: add a node at the beginning, 4: add a node at the end, 5: delete a 
+node from the beginning, 6: delete a node from the end, 7: Exit. You can take user 
+input based on the given choices.
+8) WAP to store polynomial using linked list and perform addition.
+
+Stacks
+
+9) WAP to create a stack using array and perform push, pop operations.
+10) WAP to implement stack using linked list and perform push, pop operations.
+11) WAP to convert infix expression to postfix expression.
+12) WAP to evaluate a postfix expression.
+13) WAP to convert infix expression to prefix expression.
+14) WAP to evaluate a prefix expression.
+
+Queues
+
+15) WAP to implement a linear queue using array and perform the following: 1: insert 
+an element, 2: delete an element, 3: peek, 4: display the queue, 5: exit. You can take 
+user input based on the given choices.
+16) WAP to implement a queue using linked list and perform the following: 1: insert an
+element, 2: delete an element, 3: peek, 4: display the queue, 5: exit. You can take 
+user input based on the given choices.
+17) WAP to implement circular queue and perform the following: 1: insert an element, 
+2: delete an element, 3: peek, 4: display the queue, 5: exit. You can take user input 
+based on the given choices.
+
+Trees
+
+18) WAP to create a BST (binary search tree) and perform all following operations: 
+a. Insert an element
+b. Preorder traversal
+c. Inorder traversal
+d. Postorder traversal
+e. Find smallest element
+f. Find largest element
+g. Delete an element
+h. Count the total number of nodes
+i. Exit
+
+Graph
+
+19) WAP to create a graph of n vertices using an adjacency list. Also write the code to 
+read and print its information.
+20) WAP to implement Breadth First Search.
+21) WAP to implement Depth First Search.
+
+Searching and Sorting
+
+22) WAP to search an element in an array using Binary search.
+23) WAP to sort an array of elements using bubble sort.
+24) WAP to sort an array using insertion sort.
+25) WAP to sort an array using selection sort.
+26) WAP to sort an array using merge sort.
