@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include <math.h>
-// #define f(x) 1 / (1 + x * x)
-// limit [0 to 1]
 #define E 2.7182818
-#define f(x) x *pow(x, E)
+#define f(x) pow(E, (sqrt(x) / 2))
+// limit [1 to 2]
 void main()
 {
-    int n = 6;
-    float h, x[n + 1], y[n + 1], l1 = 0, l2 = 1, s = 0.0, s4 = 0.0, s2 = 0.0;
+    int n = 4;
+    float h, x[n + 1], y[n + 1], l1 = 1, l2 = 2, s = 0.0, s4 = 0.0, s2 = 0.0;
     h = (l2 - l1) / n;
+    printf("%f\n", h);
     for (int i = 0; i < n + 1; i++)
     {
-        x[i] = s;
+        x[i] = s + l1;
         y[i] = f(x[i]);
         s += h;
     }
