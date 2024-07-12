@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- external styling (used practically more)
+         including css file -->
+    <link rel="stylesheet" href="basics1.css" />
+
+    <!-- internal styling ()-->
+    <style>
+      /* element selector */
+      h1 {
+        color: deeppink; /* all h1 tags color changes*/
+      }
+      p {
+        color: crimson; /* all p tags color changes*/
+      }
+
+      /* universal selector (least priority), applied to ones whose property not defined*/
+      * {
+        color: darkblue;
+      }
+
+      /* id selector */
+      #first {
+        color: lawngreen;
+      }
+      #second {
+        color: lawngreen;
+      }
+
+      /* class selector*/
+      .third {
+        color: gold;
+      }
+
+      /* group selector (class & id selector can also be grouped)*/
+      h2,
+      h3,
+      h4 {
+        color: crimson;
+      }
+
+      /* descendent selector (inside desc (id of div), all p tags gets darkviolet)*/
+      #desc p {
+        color: darkviolet;
+      }
+    </style>
+
+    <title>CSS</title>
+  </head>
+
+  <body>
+    <!-- internal styling -->
+    <h1>This is internal styling</h1>
+    <p>This is internal styling</p>
+
+    <!-- inline styling (applied direct to html tag)-->
+    <h1 style="color: red">This is inline styling</h1>
+    <!-- only this h1,p tag clor changes-->
+    <p style="color: blue">This is inline styling</p>
+
+    <!-- priority <==> inline > internal 
+                       inline > external 
+      among internal and external whatever defined at end have highest priority -->
+
+    <!-- id= unique identifier to single html element
+         class= grouping html elements to style them-->
+    <div id="first">First Div id</div>
+    <div id="second">second div id</div>
+    <!-- shortcut for div, write #(idname) = #first 
+         shortcut for class, write .(isname) = .third -->
+    <div class="third">3rd div class A</div>
+    <div class="third">3rd div class B</div>
+
+    <!-- group selector -->
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <!-- universal selector applied here -->
+
+    <!-- descendent selector -->
+    <div id="desc">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, animi!
+      </p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+  </body>
+</html>

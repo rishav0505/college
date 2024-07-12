@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ris</title>
+  </head>
+  <body>
+    <!-- list 2 types(ordered list(ol), unordered list(ul))-->
+    <!--ordered list, automatically numbered from 1(default), nested-->
+
+    <ol type="A">
+      <li>HTML</li>
+      <ol type="i">
+        <li>level 0</li>
+        <li>level 1</li>
+      </ol>
+      <li>C</li>
+      <li>C++</li>
+      <li>Java</li>
+      <li>python</li>
+    </ol>
+    <hr />
+
+    <!-- unordered list, by default dot, -->
+    <ul>
+      <li>C</li>
+      <li>C++</li>
+      <li>Java</li>
+      <li>python</li>
+    </ul>
+    <hr />
+
+    <!-- definition list= dl, dt, dd -->
+    <dl>
+      <dt>HTML</dt>
+      <dd>is a markup language</dd>
+      <dd>and good language</dd>
+      <dt>Java</dt>
+      <dd>is a programming language and platform</dd>
+      <dt>JavaScript</dt>
+      <dd>is a scripting language</dd>
+    </dl>
+
+    <!-- tables,, tr=table row, td=table data, th=table header 
+         1st row define heading, then data -->
+    <table border="1">
+      <caption>
+        Student info
+      </caption>
+      <!-- table heading, apears in center, insert this just after table tag-->
+
+      <tr>
+        <th colspan="3">Student details</th>
+      </tr>
+      <tr>
+        <th>name</th>
+        <th>age</th>
+        <th>gender</th>
+      </tr>
+      <tr>
+        <td>ris</td>
+        <td>20</td>
+        <td>Male</td>
+      </tr>
+      <tr>
+        <td>Mr. X</td>
+        <td>25</td>
+        <td>Male</td>
+      </tr>
+      <!--column span= combines some columns in a row -->
+      <tr>
+        <td colspan="3">this takes 3 columns</td>
+      </tr>
+
+      <tr>
+        <td colspan="2">this takes 2 column</td>
+        <td colspan="1">1 column</td>
+      </tr>
+    </table>
+  </body>
+</html>

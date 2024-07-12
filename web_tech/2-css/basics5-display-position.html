@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-size: 15px;
+      }
+      .box {
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        background-color: blueviolet;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 4px solid black;
+
+        display: block; /*next element from next line (by default) */
+
+        display: inline;
+        /* if using inline display, we cannot set height and width */
+
+        display: inline-block;
+        /* inline-block same as inline but allow to set height and width  */
+      }
+      #box2 {
+        display: none; /* dosent display, dosent take space */
+        /* visibility: none = dosent display but takes space */
+      }
+      /* percentage of parent
+      if no parent by defaut whole page */
+      #first {
+        height: 200px;
+        width: 200px;
+        background-color: aquamarine;
+        margin: 10px;
+        font-size: 20px;
+      }
+      #second {
+        height: 30%;
+        width: 50%; /* 50% of parent width */
+        background-color: chocolate;
+        font-size: 2em; /* double font size of its parent*/
+      }
+      #third {
+        font-size: 3rem; /* triple font size of its root */
+      }
+      /* vh, vw. 100=full view port space */
+      #view {
+        height: 70vh;
+        width: 50vw;
+        background-color: blueviolet;
+      }
+      
+      .b {
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        background-color: aquamarine;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 4px solid black;
+      }
+      #b1{
+        position: static;
+        /* z-index: 5; */
+      }
+      /* relative= changing position from orignal position */
+      #b2{
+        position: relative;
+        top: 20px;
+        left: 100px;
+      }
+      /* absolute, fixed= gets out of the page other items take place of it, it can overlap to other items */
+      #b3{
+        position: absolute;
+        top: 900px;
+        left: 13px;
+      }
+      #b4{
+        position: fixed;
+        right: 50px;
+        top: 40px;
+      }
+      /* z index= another layer of x-y plane
+      0 (by default)
+      1 (upper layer) [overlapping layer]
+      -1 (lower layer) */
+    </style>
+  </head>
+  <body>
+    <div id="box1" class="box">Box 1</div>
+    <div id="box2" class="box">Box 2</div>
+    <div id="box3" class="box">Box 3</div>
+
+    <hr />
+    Body
+    <div id="first">
+      first
+      <div id="second">second</div>
+      <div id="third">third</div>
+    </div>
+    <hr />
+
+    <div id="view"></div>
+    <hr />
+
+    <div id="b1" class="b">Static</div>
+    <div id="b2" class="b">Relative</div>
+    <div id="b3" class="b">Absolute</div>
+    <div id="b4" class="b">Fixed</div>
+  </body>
+</html>

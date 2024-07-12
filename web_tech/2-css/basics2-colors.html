@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 2</title>
+
+    <style>
+      /* if doing this, the margin , padding removed
+      * {
+        margin: 0;
+        padding: 0;
+      } */
+      #first {
+        color: red;
+        background-color: aqua;
+      }
+      #second {
+        color: blue;
+        background-color: fuchsia;
+      }
+      button {
+        color: floralwhite;
+        background-color: red;
+      }
+      .third {
+        color: crimson;
+        background-color: rgb(0, 255, 183);
+      }
+      #forth {
+        background-color: #00ff00;
+      }
+      #fifth {
+        background-color: #ff0000; /* in hex color code */
+      }
+      #s6th {
+        color: rgba(13, 0, 255, 0.7);
+        background-color: rgba(0, 255, 183, 0.3);
+      }
+      #s7th {
+        background-color: rgba(166, 0, 255, 0.506);
+      }
+      .box {
+        height: 40px;
+        width: 40px;
+      }
+      #box1 {
+        background-color: red;
+      }
+      #box2 {
+        background-color: #00ff00;
+      }
+      #box3 {
+        background-color: blue;
+      }
+      #icon {
+        height: 100px;
+        width: 100px;
+        background-image: url(assets/myntra.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .v {
+        background-color: #00ff00;
+        height: 50px;
+        width: 50px;
+      }
+      #hid {
+        visibility: hidden; /* it is still there but not visible */
+      }
+      #vis {
+        visibility: visible;
+      }
+      /*shorthand (color, image, repeat, attachment, position)*/
+      #back {
+        height: 100px;
+        width: 100px;
+
+        /* background-color: antiquewhite;
+        background-image: url(assets/myntra.png);
+        background-repeat: no-repeat;
+        background-position: center; */
+        background: bisque url(assets/myntra.png) no-repeat center;
+        background-size: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <!--background colour-->
+    <div id="first">first id</div>
+    <div id="second">second id</div>
+    <button>click me</button>
+    <div class="third">class a</div>
+    <div class="third">class b</div>
+
+    <!-- rgb color r,g,b=(0-255) range 
+         rgb(0-255,0-255,0-255) [in rgb model] = #RRGGBB [in hex]
+         the decimal conterted to 2 digit hex code for each r,g,b -->
+    <div id="forth">third id</div>
+    <div id="fifth">forth id</div>
+
+    <!-- alpha channel=transparancy effect [0-1] range -->
+    <div id="s6th">sixth id</div>
+    <div id="s7th">seventh id</div>
+    <br />
+    <!-- height and width
+         define height and width using pixels -->
+    <div id="box1" class="box">box 1</div>
+    <div id="box2" class="box">box 2</div>
+    <div id="box3" class="box">box 3</div>
+
+    <!-- background image property -->
+    <div id="icon"></div>
+
+    <!-- visibility property -->
+    <div id="hid" class="v">Hidden</div>
+    <br />
+    <div id="vis" class="v">Visible</div>
+    <br />
+    <div id="back">Shortcut</div>
+  </body>
+</html>

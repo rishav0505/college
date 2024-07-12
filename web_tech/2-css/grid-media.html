@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        height: 400px;
+        width: 400px;
+        display: grid;
+        grid-template-rows: 50%;
+        grid-template-columns: 50%;
+      }
+      .i {
+        text-align: center;
+        text-transform: capitalize;
+        font-size: xx-large;
+      }
+      #item1 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        background-color: aquamarine;
+      }
+      #item2 {
+        grid-row: 1/2;
+        grid-column: 2/2;
+        background-color: aliceblue;
+      }
+      #item3 {
+        grid-row: 2/2;
+        grid-column: 1/2;
+        background-color: chocolate;
+      }
+      #item4 {
+        grid-row: 2/2;
+        grid-column: 2/2;
+        background-color: darkturquoise;
+      }
+
+      /* media queries= it is like if condition */
+      .box1 {
+        height: 100px;
+        width: 100px;
+        padding: 10px;
+        background-color: aquamarine;
+        text-align: center;
+      }
+
+      /* min-width => if actual width >= min-width of screen size then do this 
+      max-width => if actual width <= max-width of screen size, then do this
+      any property of css can be changed here*/
+      @media screen and (min-width: 500px) {
+        .box1 {
+          height: 200px;
+          width: 200px;
+          background-color: coral;
+        }
+      }
+      /* if screen range 100px to 250px then do this */
+      @media screen and (min-width: 100px) and (max-width: 250px) {
+        .box1 {
+          border-radius: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- flex=1D layout
+         Grid=multidimentional layout-->
+    <h2 style="text-align: center">Grid</h2>
+    <div class="container">
+      <div id="item1" class="i"><br /><br />item 1</div>
+      <div id="item2" class="i"><br /><br />item 2</div>
+      <div id="item3" class="i"><br /><br />item 3</div>
+      <div id="item4" class="i"><br /><br />item 4</div>
+    </div>
+
+    <hr />
+    <h2 style="text-align: center">Media Queries</h2>
+    <div class="box1">Box</div>
+  </body>
+</html>

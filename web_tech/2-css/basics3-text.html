@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+
+    <!-- using google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- google icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <style>
+      /*text align= controls only horizontal alignment of a element*/
+      #box1 {
+        height: 70px;
+        width: 100px;
+        background-color: cyan;
+        text-align: center;
+      }
+      .line {
+        text-decoration: underline;
+      }
+      #line1 {
+        text-decoration-style: dotted;
+        text-transform: capitalize;
+      }
+      #line2 {
+        text-decoration-style: double;
+        text-transform: lowercase;
+      }
+      #line3 {
+        text-decoration: line-through;
+        text-decoration-style: wavy;
+        text-transform: uppercase;
+      }
+      #line4 {
+        color: red;
+        text-decoration-style: wavy;
+        text-decoration-color: blue; /* only line will be colored */
+        text-transform: none;
+      }
+      #first {
+        line-height: 6px;
+      }
+      #sec {
+        line-height: 30px;
+      }
+      /*font size, font weight [100-900] */
+      #f1 {
+        font-size: 10px;
+        font-weight: 700;
+      }
+      #f2 {
+        font-size: x-large;
+        font-weight: bolder;
+        font-style: italic;
+      }
+      #f3 {
+        font-size: larger;
+        font-weight: 100;
+        font-style: normal;
+      }
+      /*if first font cannot be downloaded by browser, it fallbacks to next font, if nothing available, it uses default text */
+      #font1 {
+        font-family: "Josefin Sans", sans-serif;
+      }
+      #font2 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box1">Box1</div>
+
+    <h3 id="line1" class="line">Capitalized text</h3>
+    <h3 id="line2" class="line">LoWER Case</h3>
+    <h3 id="line3" class="line">uppER case</h3>
+    <h3 id="line4" class="line">None</h3>
+
+    <!-- remove underline from link -->
+    <a href="" style="text-decoration: none">link1</a>
+
+    <!--line height -->
+    <p id="first">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+      exercitationem quae et perspiciatis nesciunt sequi, accusantium ipsam
+      adipisci impedit laborum. Nihil quisquam eius fugiat numquam nostrum, sed
+      molestias velit optio odit doloribus provident. Omnis, nisi corrupti
+      exercitationem eius hic vero.
+    </p>
+
+    <p id="sec">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
+      praesentium unde cupiditate deserunt sequi velit at sit expedita
+      accusantium repudiandae, suscipit ratione ex veniam odit iusto itaque
+      cumque nisi soluta, ad quam nesciunt atque voluptatem saepe. Fugiat neque
+      reprehenderit maxime?
+    </p>
+    <hr />
+    <!--heading tags not used for font size-->
+    <p id="f1">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, doloribus?
+    </p>
+    <p id="f2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ipsum
+      aliquid perspiciatis similique molestiae libero?
+    </p>
+    <p id="f3">Lorem ipsum dolor sit amet.</p>
+    <hr />
+
+    <!-- font family -->
+    <p id="font1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, est
+      fuga. Numquam explicabo necessitatibus incidunt qui, amet doloribus,
+      consequuntur velit aliquam dolorum commodi magnam reiciendis minima magni
+      nostrum? Possimus, deserunt?
+    </p>
+    <p id="font2">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum harum
+      aut perferendis reiciendis quam. Voluptate minima quibusdam autem, tenetur
+      sint aut voluptatibus unde non odio, fuga, cupiditate quod iure natus
+      harum error corporis facere est odit porro qui tempora. Ipsam!
+    </p>
+    <hr />
+    <!-- icons using font -->
+    icons using google: <br />
+    <span style="font-size: 40px" class="material-symbols-outlined">
+      heart_plus
+    </span>
+    <br />
+    <span style="font-size: 60px" class="material-symbols-outlined">
+      html
+    </span>
+    <br />
+    <!-- icons using fontawesome.com also possible -->
+  </body>
+</html>

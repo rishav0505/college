@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rishav Saha - CV</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .tiu-logo {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 100px;
+        height: auto;
+      }
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+        width: 150px;
+        height: auto;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      ul li {
+        margin-bottom: 10px;
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      .skill {
+        transition: color 0.3s;
+        cursor: pointer;
+      }
+      .skill:hover {
+        color: #ff6347;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="tiu-logo" src="images/tiu.png" alt="TIU Logo" />
+    <div class="container">
+      <img src="images/ris.jpg" alt="Rishav Saha" />
+      <h1>Rishav Saha</h1>
+      <h2>Contact Information:</h2>
+      <ul>
+        <li>
+          <strong>Address:</strong> 2/3/H Panditiya Road, Kolkata, WestBengal
+          700029
+        </li>
+        <li><strong>Phone:</strong> +916289850217</li>
+        <li>
+          <strong>Email:</strong>
+          <a href="rishav05saha3663@gmail.com">rishav05saha3663@gmail.com</a>
+        </li>
+        <li>
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/rishav-saha-65626222b/"
+            >https://www.linkedin.com/in/rishav-saha-65626222b/</a
+          >
+        </li>
+      </ul>
+      <h2>Skills:</h2>
+      <ul>
+        <li class="skill">
+          Programming Languages: C, C++, Java, JavaScript, Shell Scripting
+        </li>
+        <li class="skill">Web Development: HTML/CSS</li>
+        <li class="skill">Database Management: mySQL</li>
+        <li class="skill">OS Familiarity: Linux, Windows</li>
+        <li class="skill">Communication Skills: Hindi, English, Bengali</li>
+      </ul>
+      <h2>Hobbies:</h2>
+      <ul>
+        <li>Swimming</li>
+      </ul>
+      <h2>Education:</h2>
+      <ul>
+        <li>
+          Bachelor of Science in Computer Science: Techno India University,
+          Kolkata, West Bengal,CGPA 8.06 (Till 5th Sem)
+        </li>
+        <li>
+          Higher Secondary School Certificate (ISC): Julien Day School, Elgin
+          Road, Kolkata, XII, 85%
+        </li>
+        <li>
+          Secondary School Certificate (ICSE): Julien Day School, Elgin Road,
+          Kolkata, X, 76%
+        </li>
+      </ul>
+      <h2>Projects :</h2>
+      <ul>
+        <li class="project">
+          University database management system by using SQL
+        </li>
+      </ul>
+      <h2>Internship :</h2>
+      <ul>
+        <li class="internship">
+          Networking virtual internship supported by juniper networks
+        </li>
+      </ul>
+      <h2>Activities :</h2>
+      <ul>
+        <li class="activity">
+          Goal: I am preparing for GATE and have good foundation on CS technical
+          subjects like C, DSA, DBMS, OS, OOP, DM <br />
+          <br />
+          Physical fitness: Achieved Silver medal in intra swimming competition
+        </li>
+      </ul>
+    </div>
+    <script>
+      const skills = document.querySelectorAll(".skill");
+      skills.forEach((skill) => {
+        skill.addEventListener("mouseenter", () => {
+          skill.style.color = "#ff6347";
+        });
+        skill.addEventListener("mouseleave", () => {
+          skill.style.color = "";
+        });
+      });
+    </script>
+  </body>
+</html>

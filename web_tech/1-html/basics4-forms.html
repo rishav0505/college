@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--input tag-->
+    <form action="/submit.php">
+      <!-- placeholder,, text shown before entering text-->
+      <!-- required,, compulsary to fill that data-->
+      <!-- action attribute= specifies the url to which form data to be submitted-->
+
+      <label for="email">Userame: </label>
+      <!--connects the "Username:" with input text properly-->
+      <input type="text" id="email" /> <br />
+      <br />
+      <!--text visible to us-->
+
+      Password: <input type="password" placeholder="Enter Password" required />
+      <!--text hidden-->
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+    <hr />
+    <br />
+    <form action="">
+      Date: <input type="date" /> <br />
+      <br />
+
+      File: <input type="file" /> <br /><br />
+
+      Color: <input type="color" /> <br /><br />
+
+      Range: <input type="range" /> <br /><br />
+
+      Button: <input type="button" value="poke me" />
+    </form>
+
+    <br />
+    <hr />
+    <br />
+
+    <!--radio-->
+    <form>
+      <!-- MCQ
+        if same name tag in all 3 input, only 1 input will be selected 
+          if select multiple i/p, prev selected will be de selected-->
+
+      <label for="male">Male: </label>
+      <input type="radio" name="gender" value="male" id="male" /> <br />
+
+      <label for="female">Female: </label>
+      <input type="radio" name="gender" value="female" id="female" /> <br />
+
+      <label for="other">other: </label>
+      <input type="radio" name="gender" value="other" id="other" /> <br />
+    </form>
+    <hr />
+    <form>
+      <!--MSQ
+            if diffrent name tag in all 3 input, all input can be selected -->
+      <label for="male">Male: </label>
+      <input type="radio" name="gender1" value="male" id="male" /> <br />
+
+      <label for="female">Female: </label>
+      <input type="radio" name="gender2" value="female" id="female" /> <br />
+
+      <label for="other">other: </label>
+      <input type="radio" name="gender3" value="other" id="other" /> <br />
+
+      <!-- when send data to server after submitting, we should specify for which name what value selected-->
+
+      <!--name= id for data,, identifies input element uniquely
+          value= can be set by default or by user of the input (this data sent to server )-->
+    </form>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- checkbox
+         MSQ
+         for same name tag, multiple values possible-->
+
+    <form>
+      <label for="c">C</label>
+      <input type="checkbox" name="language" id="c" /> <br />
+
+      <label for="java">Java</label>
+      <input type="checkbox" name="language" id="java" /> <br />
+
+      <label for="python">Python</label>
+      <input type="checkbox" name="language" id="python" /> <br />
+    </form>
+    <br />
+    <hr />
+    <br />
+
+    <!-- to make checkbox inside table without border-->
+    <table>
+      <form>
+        <tr>
+          <th><label for="c">C</label></th>
+          <th><input type="checkbox" name="language" id="c" /></th>
+        </tr>
+        <tr>
+          <th><label for="java">Java</label></th>
+          <th><input type="checkbox" name="language" id="java" /></th>
+        </tr>
+        <tr>
+          <th><label for="python">Python</label></th>
+          <th><input type="checkbox" name="language" id="python" /></th>
+        </tr>
+      </form>
+    </table>
+
+    <br />
+    <hr />
+    <br />
+
+    <!--select -->
+    <form>
+      <label for="country">Country name</label>
+      <select name="country" id="country">
+        <option value="India">India</option>
+        <option value="US">US</option>
+        <option value="UK">UK</option>
+        <option value="other">other</option>
+      </select>
+      <!--for country name tag, one value will be sent among all options-->
+    </form>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- text area 
+         to take multiline inputs in form (resizable through browser)
+         default rows & col we can give here but it can be resizable by user
+         we can scroll also-->
+
+    <form>
+      <textarea name="story" id="story" rows="4" cols="20" placeholder="default text here"></textarea>
+    </form>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- iframe 
+         include parts of other website (or) full other website in our website -->
+
+    <iframe
+      width="300"
+      src="https://www.youtube.com/embed/cpoXLj24BDY?si=4YvDP2TjozIDdxOR"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <br />
+    <hr />
+    <br />
+
+    <iframe
+      src="https://en.wikipedia.org/wiki/Enga_Province"
+      frameborder="0"
+    ></iframe>
+  </body>
+</html>

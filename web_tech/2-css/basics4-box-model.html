@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      #padd {
+        height: 100px;
+        width: 180px;
+        background-color: cyan;
+
+        /*top right bottom left (clockwise) shorthand for padding border margin border-radius
+        eg- padding: 5px 10px 15px 20px; */
+
+        /* all padding same 
+        padding= part of the item so always defined*/
+        padding: 10px;
+
+        /*margin= gap b/w 2 items 
+        margin of max(1st item , 2nd item) gap is taken smaller margin ignored 
+        margin not counted in box dimentions*/
+        margin: 4px;
+      }
+      #but {
+        height: 100px;
+        width: 100px;
+        margin: 8px;
+        /*border: width style(solid, dashed, dotted) color(default black) */
+        border-radius: 20px;
+        /*radius= used to create round corners, it becomes citcle for large radius*/
+        border: 5px solid;
+      }
+      #border {
+        height: 100px;
+        width: 100px;
+        margin: 8px;
+        background-color: chartreuse;
+        padding: 10px;
+        border-radius: 30px;
+        border: 5px dotted coral;
+        /* box-sizing: border-box; */
+      }
+      /*box sizing = content-box(by default) the dimentions set for item only 
+      border-box= the dimentions set for item+padding+border and it makes item size small if padding & border defined */
+      /*box dimentions= item + padding + border*/
+    </style>
+  </head>
+  <body>
+    <div id="padd">Padding checker</div>
+
+    <button id="but">Click me</button>
+    <div id="border" style="font-family: cursive">
+      <pre>
+        
+      </pre>
+      Border check
+    </div>
+  </body>
+</html>
