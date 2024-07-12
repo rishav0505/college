@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+ 
 void makeItQuirky(int *arr, int dim)
 {
     for (int i = 0; i < dim; i++)

@@ -1,5 +1,5 @@
 /*1) WAP to search an element in an array using Linear search and tell whether it is smallest element or not.*/
-
+ 
 #include <stdio.h>
 #include <stdlib.h>
 
